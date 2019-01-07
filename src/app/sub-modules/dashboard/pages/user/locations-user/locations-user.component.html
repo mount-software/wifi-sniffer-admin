@@ -1,0 +1,26 @@
+<div class="container">
+    <mat-grid-list cols="1" rowHeight="100" gutterSize="15">
+        <mat-grid-tile *ngFor="let location of locationsList">
+            <mat-card  [routerLink]="['/user', 'locations',  location.id, 'map']" >
+                <span class="edit" [routerLink]="['/user', 'locations',  location.id, 'edit']">Editeaza</span>
+                <!--<mat-card-title>Locatie:</mat-card-title>-->
+                <mat-card-content>
+                    <h2>{{location.name}}</h2>
+                    <h3>{{location.address}}</h3>
+                    <!--{{location.id}}-->
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <!--<div *ngFor="let location of locationsList">-->
+    <!--<mat-card style="background-color: #3f51b5; margin-top: 10px"-->
+    <!--[routerLink]="['/user', 'locations',  location.id, 'edit']">-->
+    <!--{{location.name}}-->
+    <!--{{location.id}}-->
+    <!--</mat-card>-->
+    <!--</div>-->
+
+    <button class="add-button" mat-button mat-raised-button color="primary"
+            [routerLink]="['/user', 'locations', 'add']">Adauga locatie
+    </button>
+</div>

@@ -1,0 +1,15 @@
+@import "../../theme/wifi-theme";
+
+.sidenav-container {
+  min-height: 100vh;
+}
+
+.sidenav {
+  color: $dark-primary-text;
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+}
+
+//.mat-fab.mat-accent {
+//  background: $my-app-accent;
+//}

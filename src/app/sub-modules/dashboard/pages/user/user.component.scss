@@ -1,0 +1,20 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+mat-grid-list {
+  margin-top: 40px;
+}
+
+mat-card {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+.edit {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

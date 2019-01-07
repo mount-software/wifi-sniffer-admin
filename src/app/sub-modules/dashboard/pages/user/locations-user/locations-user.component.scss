@@ -1,0 +1,33 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+mat-grid-list {
+  margin-top: 80px;
+}
+
+mat-card {
+  width: 80%;
+  height: 50%;
+  position: relative;
+
+  .edit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: #1A237E;
+  }
+}
+
+h3 {
+  color: rgba(black, 0.54);
+}
+
+.add-button {
+  position: absolute;
+  top: -60px;
+  right: 0;
+}

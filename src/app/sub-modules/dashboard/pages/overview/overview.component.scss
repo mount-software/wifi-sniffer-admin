@@ -1,0 +1,34 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+}
+
+.map-zone {
+  height: 50%
+}
+
+.edit-fab {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.add-pin-fab {
+  right: 70px;
+  bottom: 10px;
+  position: fixed;
+}
+
+.options-radio-group {
+  position: fixed;
+  top: 110px;
+  right: 20px;
+}
+
+mat-radio-button {
+  padding-right: 10px;
+}

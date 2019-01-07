@@ -1,0 +1,17 @@
+<div class="map-zone" fxFlex>
+    <app-map></app-map>
+    <mat-radio-group class="options-radio-group" [(ngModel)]="selectedOption" (change)="handleChangeOptions($event)">
+        <mat-radio-button color="primary" class="example-radio-button" *ngFor="let option of options" [value]="option">
+            {{option}}
+        </mat-radio-button>
+    </mat-radio-group>
+    <button class="edit-fab" color="primary" *ngIf="mapComponent.state != mapState.EDIT" mat-fab (click)="activateEditMode()">
+        Edit pins
+    </button>
+    <button class="edit-fab" color="primary" *ngIf="mapComponent.state != mapState.SHOW" mat-fab (click)="deactivateEditMode()">
+        Save
+    </button>
+    <button class="add-pin-fab" color="primary" *ngIf="mapComponent.state != mapState.SHOW" mat-fab (click)="addMarker()">
+        Add Pin
+    </button>
+</div>

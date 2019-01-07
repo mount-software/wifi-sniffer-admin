@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Wifi #{{data.wifi.id}}</h2>
+<mat-dialog-content>
+  <div>Raza de acoperire {{data.wifi.radius}} m</div>
+  <div>Pozitie: lat[{{data.wifi.coordinates.lat}}]; lng[{{data.wifi.coordinates.lng}}]</div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>close</button>
+  <button mat-button mat-dialog-close [routerLink]="['wifi_settings',data.location.id,data.wifi.id]">Go to wifi
+    settings
+  </button>
+</mat-dialog-actions>

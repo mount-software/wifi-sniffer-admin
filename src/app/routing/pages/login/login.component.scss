@@ -1,0 +1,73 @@
+@import "../../../../variables";
+@import "../../../theme/wifi-theme";
+
+.button-submit {
+  min-width: 50% !important;
+  margin: 0 auto;
+  color: white;
+  padding: 10px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.container-form{
+  width: 100%;
+  padding-top: 20px;
+}
+
+.container-input-mail {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container-input-password {
+  width: 50%;
+  display: block;
+  margin:0 auto;
+
+}
+
+.mat-button {
+  min-width: 76px;
+  line-height: 32px;
+}
+
+.error{
+  width: 50%;
+  display: block;
+  margin:0 auto;
+  padding-top: 10px;
+  color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.reveal-password {
+  cursor: pointer;
+}
+
+.recover-password {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  a {
+    padding: 0;
+    color: #1A237E;
+  }
+}

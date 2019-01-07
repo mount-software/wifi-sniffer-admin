@@ -1,0 +1,15 @@
+<div class="map-zone" fxFlex>
+  <app-map></app-map>
+  <div class="map-control-panel">
+    <div>
+      <mat-checkbox class="example-margin" [(ngModel)]="config.sensors" (ngModelChange)="togglePins($event,'sensors')">
+        Sensors
+      </mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox class="example-margin" [(ngModel)]="config.recordPoints"
+                    (ngModelChange)="togglePins($event,'recordPoints')">Record Points
+      </mat-checkbox>
+    </div>
+  </div>
+</div>

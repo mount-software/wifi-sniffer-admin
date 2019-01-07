@@ -1,0 +1,10 @@
+{
+  "/hostProxy": {
+    "target": "http://wifisnifferadminbackend.master.dev.www.ro",
+    "secure": "false",
+    "pathRewrite": {
+      "^/hostProxy": ""
+    },
+    "changeOrigin": true
+  }
+}

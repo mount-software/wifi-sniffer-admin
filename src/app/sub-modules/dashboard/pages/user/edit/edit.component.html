@@ -1,0 +1,111 @@
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="edit(f)" class="container-form" align="center">
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Email:"
+                   name="email"
+                   type="email"
+                   id="email"
+                   required
+                   [(ngModel)]="user.email"
+                   #emailAdd="ngModel"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                   class="form-control">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Current password:"
+                   name="currentPassword"
+                   [(ngModel)]="currentPassword"
+                   #currentPasswordAdd="ngModel"
+                   [type]="hideCurrentPassword ? 'password' : 'text'"
+                   id="currentPassword"
+                   class="form-control">
+            <mat-icon matSuffix (click)="hideCurrentPassword = !hideCurrentPassword">{{hideCurrentPassword ? 'visibility' :
+                'visibility_off'}}
+            </mat-icon>
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="New password:"
+                   name="newPassword"
+                   [(ngModel)]="newPassword"
+                   #newPasswordAdd="ngModel"
+                   [type]="hideNewPassword ? 'password' : 'text'"
+                   id="newPassword"
+                   class="form-control">
+            <mat-icon matSuffix (click)="hideNewPassword = !hideNewPassword">{{hideNewPassword ? 'visibility' :
+                'visibility_off'}}
+            </mat-icon>
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput=""
+                   placeholder="Introduceti numele firmei:"
+                   name="companyName"
+                   id="companyName"
+                   class="form-control"
+                   [(ngModel)]="companyName"
+                   #companyNameAdd="ngModel">
+        </mat-form-field>
+        <mat-form-field class="container-input" hintLabel="Max 8 characters">
+            <input matInput
+                   #input
+                   name="fiscalCode"
+                   id="fiscalCode"
+                   class="form-control"
+                   maxlength="8"
+                   placeholder="Introduceti codul fiscal:"
+                   [(ngModel)]="fiscalCode"
+                   #fiscalCodeAdd="ngModel">
+            <mat-hint align="end">{{input.value?.length || 0}}/8</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Introduceti nr. reg comertului:"
+                   name="noTradeRegistry"
+                   id="noTradeRegistry"
+                   class="form-control"
+                   type="number"
+                   [(ngModel)]="noTradeRegistry"
+                   #noTradeRegistryAdd="ngModel">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Introduceti adresa sediului social:"
+                   name="companyAddress"
+                   id="companyAddress"
+                   class="form-control"
+                   [(ngModel)]="companyAddress"
+                   #companyAddressAdd="ngModel">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Introduceti numele persoanei de contact:"
+                   name="contactPersonName"
+                   id="contactPersonName"
+                   [(ngModel)]="contactPersonName"
+                   #contactPersonNameAdd="ngModel"
+                   class="form-control">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Introduceti numarul de telefon al persoanei de contact:"
+                   name="contactPersonPhone"
+                   id="contactPersonPhone"
+                   type="number"
+                   [(ngModel)]="contactPersonPhone"
+                   #contactPersonPhoneAdd="ngModel"
+                   class="form-control">
+        </mat-form-field>
+        <div class="container-checkbox">
+            <mat-checkbox name="vatPay" color="primary" [(ngModel)]="vatPay">Platitor de TVA</mat-checkbox>
+        </div>
+        <button mat-button mat-raised-button
+                type="submit"
+                class="button-submit"
+                color="primary">
+            Salveaza
+        </button>
+    </form>
+</div>
+

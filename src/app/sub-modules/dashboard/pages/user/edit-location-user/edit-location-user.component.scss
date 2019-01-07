@@ -1,0 +1,42 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container-form{
+  width: 100%;
+  padding-top: 20px;
+}
+
+.container-input {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.button-submit {
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.navigate-back {
+  padding: 20px 60px;
+  font-size: 40px;
+  cursor: pointer;
+}

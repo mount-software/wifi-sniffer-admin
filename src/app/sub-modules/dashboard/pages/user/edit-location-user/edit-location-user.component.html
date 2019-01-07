@@ -1,0 +1,104 @@
+<i class="material-icons navigate-back" (click)="goBack()">
+    arrow_back
+</i>
+<div class="container">
+    <form enctype="multipart/form-data" #f="ngForm" (submit)="editLocation(name,city,country,address,floor,lat,lng)" class="container-form" align="center">
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Denumirea locatiei:"
+                   name="name"
+                   id="name"
+                   [(ngModel)]="name"
+                   #nameAdd="ngModel"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Tara:"
+                   name="country"
+                   id="country"
+                   [(ngModel)]="country"
+                   #countryAdd="ngModel"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Oras:"
+                   name="city"
+                   id="city"
+                   [(ngModel)]="city"
+                   #cityAdd="ngModel"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Adresa:"
+                   name="address"
+                   id="address"
+                   [(ngModel)]="address"
+                   #addressAdd="ngModel"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Etaj:"
+                   name="floor"
+                   id="floor"
+                   [(ngModel)]="floor"
+                   #floorAdd="ngModel"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Latitudine:"
+                   name="lat"
+                   id="lat"
+                   [(ngModel)]="lat"
+                   #latAdd="ngModel"
+                   type="number"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <mat-form-field class="container-input">
+            <input matInput
+                   placeholder="Longitudine:"
+                   name="lng"
+                   id="lng"
+                   type="number"
+                   [(ngModel)]="lng"
+                   #lngAdd="ngModel"
+                   class="form-control"
+                   [required]="addLocationInput">
+        </mat-form-field>
+        <!--hintLabel="Max 100 characters"-->
+        <!--<mat-form-field class="container-input">-->
+        <!--<textarea matInput-->
+        <!--name="description"-->
+        <!--id="description"-->
+        <!--[(ngModel)]="description"-->
+        <!--#descrptionAdd="ngModel"-->
+        <!--placeholder="Descriere"-->
+        <!--maxlength="100"-->
+        <!--rows="3"-->
+        <!--minlength="4"-->
+        <!--class="form-control">-->
+        <!--</textarea>-->
+        <!--</mat-form-field>-->
+        <button mat-button mat-raised-button
+                type="submit"
+                class="button-submit"
+                color="primary">
+            {{buttonText}}
+        </button>
+    </form>
+</div>
+
+
+
+
+
